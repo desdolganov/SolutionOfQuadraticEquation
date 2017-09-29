@@ -1,0 +1,5 @@
+C:\Users\ккккк\Documents\Visual Studio 2015\Projects\SolutionOfQuadraticEquation\SolutionOfQuadraticEquation\bin\Debug\SolutionOfQuadraticEquation.dll
+C:\Users\ккккк\Documents\Visual Studio 2015\Projects\SolutionOfQuadraticEquation\SolutionOfQuadraticEquation\bin\Debug\SolutionOfQuadraticEquation.pdb
+C:\Users\ккккк\Documents\Visual Studio 2015\Projects\SolutionOfQuadraticEquation\SolutionOfQuadraticEquation\obj\Debug\SolutionOfQuadraticEquation.csprojResolveAssemblyReference.cache
+C:\Users\ккккк\Documents\Visual Studio 2015\Projects\SolutionOfQuadraticEquation\SolutionOfQuadraticEquation\obj\Debug\SolutionOfQuadraticEquation.dll
+C:\Users\ккккк\Documents\Visual Studio 2015\Projects\SolutionOfQuadraticEquation\SolutionOfQuadraticEquation\obj\Debug\SolutionOfQuadraticEquation.pdb
