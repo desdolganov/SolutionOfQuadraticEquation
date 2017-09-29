@@ -75,7 +75,7 @@ namespace SolutionOfQuadraticEquation
             return ans;
         }
 
-        public static int[] parsToInt(string allkoef)
+        public int[] parsToInt(string allkoef)
         {
             int[] koefs = new int[13];
             for (int i = 1; i <= 2; i++)
@@ -87,7 +87,7 @@ namespace SolutionOfQuadraticEquation
             return koefs;
         }
 
-        public static int discrimfind(int[] koefs)
+        public int discrimfind(int[] koefs)
         {
 
             int discrim;
@@ -95,7 +95,7 @@ namespace SolutionOfQuadraticEquation
             return discrim;
         }
 
-        public static bool discrimvaluation(int discrim)
+        public bool discrimvaluation(int discrim)
         {
             if (discrim < 0)
             {
@@ -107,17 +107,17 @@ namespace SolutionOfQuadraticEquation
             }
         }
 
-        public static double findFirstRoot(int[] koefs, int discrim)
+        public double findFirstRoot(int[] koefs, int discrim)
         {
             return (Convert.ToDouble(-koefs[2]) + Math.Sqrt(Convert.ToDouble(discrim))) / Convert.ToDouble(2 * koefs[1]);
         }
 
-        public static double findSecondRoot(int[] koefs, int discrim)
+        public double findSecondRoot(int[] koefs, int discrim)
         {
             return (Convert.ToDouble(-koefs[2]) - Math.Sqrt(Convert.ToDouble(discrim))) / Convert.ToDouble(2 * koefs[1]);
         }
 
-        public static string output(double firstRoot, double secondRoot)
+        public string output(double firstRoot, double secondRoot)
         {
             return "first root is :" + Convert.ToString(firstRoot) + "; second root is :" + Convert.ToString(secondRoot);
         }

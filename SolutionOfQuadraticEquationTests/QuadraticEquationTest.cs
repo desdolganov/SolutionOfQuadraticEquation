@@ -13,7 +13,7 @@ namespace SolutionOfQuadraticEquationTests
             string exist = "-7#-9#17";
             string result;
 
-            QuadraticEquationSolution act = new QuadraticEquationSolution();
+            SolutionOfQuadraticEquation.QuadraticEquationSolution act = new SolutionOfQuadraticEquation.QuadraticEquationSolution();
             result = act.parsing(equation);
 
             Assert.AreEqual(result, exist);
@@ -23,11 +23,11 @@ namespace SolutionOfQuadraticEquationTests
         [TestMethod]
         public void stringEquation_oneStringWithThreeKoefficients2()
         {
-            string equation = "- 7 x^2 ++ -9x + 17 =0";
+            string equation = "- 7 x^^2 + -9x + 17 =0";
             string exist = "error";
             string result;
 
-            QuadraticEquationSolution act = new QuadraticEquationSolution();
+            SolutionOfQuadraticEquation.QuadraticEquationSolution act = new SolutionOfQuadraticEquation.QuadraticEquationSolution();
             result = act.parsing(equation);
 
             Assert.AreEqual(result, exist);
@@ -39,14 +39,16 @@ namespace SolutionOfQuadraticEquationTests
             string roots = "-17#5#9";
             int[] exist = new int[13];
             int[] result = new int[13];
-            exist[1] = 17;
+            exist[1] = -17;
             exist[2] = 5;
             exist[3] = 9;
 
-            QuadraticEquationSolution act = new QuadraticEquationSolution();
+            SolutionOfQuadraticEquation.QuadraticEquationSolution act = new SolutionOfQuadraticEquation.QuadraticEquationSolution();
             result = act.parsToInt(roots);
 
-            Assert.AreEqual(result, exist);
+            Assert.AreEqual(result[1], exist[1]);
+            Assert.AreEqual(result[2], exist[2]);
+            Assert.AreEqual(result[3], exist[3]);
         }
 
         [TestMethod]
@@ -56,10 +58,10 @@ namespace SolutionOfQuadraticEquationTests
             koefs[1] = 5;
             koefs[2] = 7;
             koefs[3] = -9;
-            int exist = 277;
+            int exist = 229;
             int result;
 
-            QuadraticEquationSolution act = new QuadraticEquationSolution();
+            SolutionOfQuadraticEquation.QuadraticEquationSolution act = new SolutionOfQuadraticEquation.QuadraticEquationSolution();
             result = act.discrimfind(koefs);
 
             Assert.AreEqual(result, exist);
@@ -68,15 +70,12 @@ namespace SolutionOfQuadraticEquationTests
         [TestMethod]
         public void diskrim_diskrimShouldbepositive()
         {
-            int[] koefs = new int[13];
-            koefs[1] = 5;
-            koefs[2] = 1;
-            koefs[3] = 3;
+            int discrim = -7;
             bool exist = false;
             bool result;
 
-            QuadraticEquationSolution act = new QuadraticEquationSolution();
-            result = act.discrimfind(koefs);
+            SolutionOfQuadraticEquation.QuadraticEquationSolution act = new SolutionOfQuadraticEquation.QuadraticEquationSolution();
+            result = act.discrimvaluation(discrim);
 
             Assert.AreEqual(result, exist);
         }
@@ -89,10 +88,10 @@ namespace SolutionOfQuadraticEquationTests
             koefs[2] = 10;
             koefs[3] = -7;
             int diskrim = 240;
-            double exist = -8.4508;
+            double exist = 0.5492;
             double result;
 
-            QuadraticEquationSolution act = new QuadraticEquationSolution();
+            SolutionOfQuadraticEquation.QuadraticEquationSolution act = new SolutionOfQuadraticEquation.QuadraticEquationSolution();
             result = act.findFirstRoot(koefs, diskrim);
 
             Assert.AreEqual(result, exist, 0.0001);
@@ -106,10 +105,10 @@ namespace SolutionOfQuadraticEquationTests
             koefs[2] = 10;
             koefs[3] = -7;
             int diskrim = 240;
-            double exist = -11.5492;
+            double exist = -2.5492;
             double result;
 
-            QuadraticEquationSolution act = new QuadraticEquationSolution();
+            SolutionOfQuadraticEquation.QuadraticEquationSolution act = new SolutionOfQuadraticEquation.QuadraticEquationSolution();
             result = act.findSecondRoot(koefs, diskrim);
 
             Assert.AreEqual(result, exist, 0.0001);
