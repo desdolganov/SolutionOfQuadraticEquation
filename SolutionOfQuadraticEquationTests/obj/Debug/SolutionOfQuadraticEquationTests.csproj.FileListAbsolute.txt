@@ -1,8 +1,8 @@
+C:\Users\ккккк\Documents\Visual Studio 2015\Projects\SolutionOfQuadraticEquation\SolutionOfQuadraticEquationTests\obj\Debug\SolutionOfQuadraticEquationTests.csprojResolveAssemblyReference.cache
 C:\Users\ккккк\Documents\Visual Studio 2015\Projects\SolutionOfQuadraticEquation\SolutionOfQuadraticEquationTests\bin\Debug\SolutionOfQuadraticEquationTests.dll
 C:\Users\ккккк\Documents\Visual Studio 2015\Projects\SolutionOfQuadraticEquation\SolutionOfQuadraticEquationTests\bin\Debug\SolutionOfQuadraticEquationTests.pdb
 C:\Users\ккккк\Documents\Visual Studio 2015\Projects\SolutionOfQuadraticEquation\SolutionOfQuadraticEquationTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-C:\Users\ккккк\Documents\Visual Studio 2015\Projects\SolutionOfQuadraticEquation\SolutionOfQuadraticEquationTests\obj\Debug\SolutionOfQuadraticEquationTests.csprojResolveAssemblyReference.cache
-C:\Users\ккккк\Documents\Visual Studio 2015\Projects\SolutionOfQuadraticEquation\SolutionOfQuadraticEquationTests\obj\Debug\SolutionOfQuadraticEquationTests.dll
-C:\Users\ккккк\Documents\Visual Studio 2015\Projects\SolutionOfQuadraticEquation\SolutionOfQuadraticEquationTests\obj\Debug\SolutionOfQuadraticEquationTests.pdb
 C:\Users\ккккк\Documents\Visual Studio 2015\Projects\SolutionOfQuadraticEquation\SolutionOfQuadraticEquationTests\bin\Debug\SolutionOfQuadraticEquation.dll
 C:\Users\ккккк\Documents\Visual Studio 2015\Projects\SolutionOfQuadraticEquation\SolutionOfQuadraticEquationTests\bin\Debug\SolutionOfQuadraticEquation.pdb
+C:\Users\ккккк\Documents\Visual Studio 2015\Projects\SolutionOfQuadraticEquation\SolutionOfQuadraticEquationTests\obj\Debug\SolutionOfQuadraticEquationTests.dll
+C:\Users\ккккк\Documents\Visual Studio 2015\Projects\SolutionOfQuadraticEquation\SolutionOfQuadraticEquationTests\obj\Debug\SolutionOfQuadraticEquationTests.pdb

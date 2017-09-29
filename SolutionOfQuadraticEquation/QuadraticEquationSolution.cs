@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace SolutionOfQuadraticEquation
 {
-    public class QuadeaticEquationSolution
+    public class QuadraticEquationSolution
     {
-        public static string parsing(string question)
+        public string parsing(string question)
         {
             string ans = question;
             string er = "error";
