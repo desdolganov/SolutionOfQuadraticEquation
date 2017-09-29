@@ -13,7 +13,7 @@ namespace SolutionOfQuadraticEquationTests
             string exist = "-7#-9#17";
             string result;
 
-            QuadraticEquation act = new QuadraticEquation();
+            QuadraticEquationSolution act = new QuadraticEquationSolution();
             result = act.parsing(equation);
 
             Assert.AreEqual(result, exist);
@@ -27,7 +27,7 @@ namespace SolutionOfQuadraticEquationTests
             string exist = "error";
             string result;
 
-            QuadraticEquation act = new QuadraticEquation();
+            QuadraticEquationSolution act = new QuadraticEquationSolution();
             result = act.parsing(equation);
 
             Assert.AreEqual(result, exist);
@@ -43,7 +43,7 @@ namespace SolutionOfQuadraticEquationTests
             exist[2] = 5;
             exist[3] = 9;
 
-            QuadraticEquation act = new QuadraticEquation();
+            QuadraticEquationSolution act = new QuadraticEquationSolution();
             result = act.parsToInt(roots);
 
             Assert.AreEqual(result, exist);
@@ -59,7 +59,7 @@ namespace SolutionOfQuadraticEquationTests
             int exist = 277;
             int result;
 
-            QuadraticEquation act = new QuadraticEquation();
+            QuadraticEquationSolution act = new QuadraticEquationSolution();
             result = act.discrimfind(koefs);
 
             Assert.AreEqual(result, exist);
@@ -75,7 +75,7 @@ namespace SolutionOfQuadraticEquationTests
             bool exist = false;
             bool result;
 
-            QuadraticEquation act = new QuadraticEquation();
+            QuadraticEquationSolution act = new QuadraticEquationSolution();
             result = act.discrimfind(koefs);
 
             Assert.AreEqual(result, exist);
@@ -92,7 +92,7 @@ namespace SolutionOfQuadraticEquationTests
             double exist = -8.4508;
             double result;
 
-            QuadraticEquation act = new QuadraticEquation();
+            QuadraticEquationSolution act = new QuadraticEquationSolution();
             result = act.findFirstRoot(koefs, diskrim);
 
             Assert.AreEqual(result, exist, 0.0001);
@@ -109,7 +109,7 @@ namespace SolutionOfQuadraticEquationTests
             double exist = -11.5492;
             double result;
 
-            QuadraticEquation act = new QuadraticEquation();
+            QuadraticEquationSolution act = new QuadraticEquationSolution();
             result = act.findSecondRoot(koefs, diskrim);
 
             Assert.AreEqual(result, exist, 0.0001);
