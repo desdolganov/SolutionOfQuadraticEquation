@@ -14,7 +14,7 @@ namespace SolutionOfQuadraticEquationTests
             string result;
 
             QuadraticEquation act = new QuadraticEquation();
-            result = act.parsing(equals);
+            result = act.parsing(equation);
 
             Assert.AreEqual(result, exist);
 
@@ -24,11 +24,11 @@ namespace SolutionOfQuadraticEquationTests
         public void stringEquation_oneStringWithThreeKoefficients2()
         {
             string equation = "- 7 x^2 ++ -9x + 17 =0";
-            string exist = "error;
+            string exist = "error";
             string result;
 
             QuadraticEquation act = new QuadraticEquation();
-            result = act.parsing(equals);
+            result = act.parsing(equation);
 
             Assert.AreEqual(result, exist);
         }
