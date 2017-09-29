@@ -14,7 +14,7 @@ namespace SolutionOfQuadraticEquationTests
             string result;
 
             QuadraticEquation act = new QuadraticEquation();
-            result = QuadraticEquation.parsing(equals);
+            result = act.parsing(equals);
 
             Assert.AreEqual(result, exist);
 
@@ -28,7 +28,7 @@ namespace SolutionOfQuadraticEquationTests
             string result;
 
             QuadraticEquation act = new QuadraticEquation();
-            result = QuadraticEquation.parsing(equals);
+            result = act.parsing(equals);
 
             Assert.AreEqual(result, exist);
         }
@@ -44,7 +44,7 @@ namespace SolutionOfQuadraticEquationTests
             exist[3] = 9;
 
             QuadraticEquation act = new QuadraticEquation();
-            result = QuadraticEquation.parsToInt(roots);
+            result = act.parsToInt(roots);
 
             Assert.AreEqual(result, exist);
         }
@@ -57,62 +57,62 @@ namespace SolutionOfQuadraticEquationTests
             koefs[2] = 7;
             koefs[3] = -9;
             int exist = 277;
-            int disk;
+            int result;
 
             QuadraticEquation act = new QuadraticEquation();
-            disk = QuadraticEquation.discrimfind(koefs);
+            result = act.discrimfind(koefs);
 
-            Assert.AreEqual(disk, exist);
+            Assert.AreEqual(result, exist);
         }
 
         [TestMethod]
         public void diskrim_diskrimShouldbepositive()
         {
-            int[] koefs;
+            int[] koefs = new int[13];
             koefs[1] = 5;
             koefs[2] = 1;
             koefs[3] = 3;
             bool exist = false;
-            bool ans;
+            bool result;
 
             QuadraticEquation act = new QuadraticEquation();
-            ans = QuadraticEquation.discrimfind(koefs);
+            result = act.discrimfind(koefs);
 
-            Assert.AreEqual(ans, exist);
+            Assert.AreEqual(result, exist);
         }
 
         [TestMethod]
         public void discrimAndThreeKoefs_FirstRootShouldBeRight()
         {
-            int[] koefs;
+            int[] koefs = new int[13];
             koefs[1] = 5;
             koefs[2] = 10;
             koefs[3] = -7;
             int diskrim = 240;
             double exist = -8.4508;
-            double ans;
+            double result;
 
             QuadraticEquation act = new QuadraticEquation();
-            ans = QuadraticEquation.findFirstRoot(koefs, diskrim);
+            result = act.findFirstRoot(koefs, diskrim);
 
-            Assert.AreEqual(ans, exist, 0.0001);
+            Assert.AreEqual(result, exist, 0.0001);
         }
 
         [TestMethod]
         public void discrimAndThreeKoefs_SecondRootShouldBeRight()
         {
-            int[] koefs;
+            int[] koefs = new int[13];
             koefs[1] = 5;
             koefs[2] = 10;
             koefs[3] = -7;
             int diskrim = 240;
             double exist = -11.5492;
-            double ans;
+            double result;
 
             QuadraticEquation act = new QuadraticEquation();
-            ans = QuadraticEquation.findSecondRoot(koefs, diskrim);
+            result = act.findSecondRoot(koefs, diskrim);
 
-            Assert.AreEqual(ans, exist, 0.0001);
+            Assert.AreEqual(result, exist, 0.0001);
         }
     }
 }
