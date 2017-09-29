@@ -74,5 +74,21 @@ namespace SolutionOfQuadraticEquation
             ans = koefA + '#' + koefB + '#' + ans;
             return ans;
         }
+
+        public static int discrimfind(string allkoef)
+        {
+
+            int[] koefs = new int[13];
+            int discrim;
+            for (int i = 1; i <= 2; i++)
+            {
+                koefs[i] = Convert.ToInt32(allkoef.Remove(allkoef.IndexOf('#'), allkoef.Length - allkoef.IndexOf('#')));
+                allkoef = allkoef.Remove(0, allkoef.IndexOf('#') + 1);
+            }
+            koefs[3] = Convert.ToInt32(allkoef);
+
+            discrim = koefs[2] * koefs[2] - 4 * koefs[1] * koefs[3];
+            return discrim;
+        }
     }
 }
