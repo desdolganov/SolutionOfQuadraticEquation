@@ -75,20 +75,51 @@ namespace SolutionOfQuadraticEquation
             return ans;
         }
 
-        public static int discrimfind(string allkoef)
+        public static int[] parsToInt(string allkoef)
         {
-
             int[] koefs = new int[13];
-            int discrim;
             for (int i = 1; i <= 2; i++)
             {
                 koefs[i] = Convert.ToInt32(allkoef.Remove(allkoef.IndexOf('#'), allkoef.Length - allkoef.IndexOf('#')));
                 allkoef = allkoef.Remove(0, allkoef.IndexOf('#') + 1);
             }
             koefs[3] = Convert.ToInt32(allkoef);
+            return koefs;
+        }
 
+        public static int discrimfind(int[] koefs)
+        {
+
+            int discrim;
             discrim = koefs[2] * koefs[2] - 4 * koefs[1] * koefs[3];
             return discrim;
+        }
+
+        public static bool discrimvaluation(int discrim)
+        {
+            if (discrim < 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+        public static double findFirstRoot(int[] koefs, int discrim)
+        {
+            return (Convert.ToDouble(-koefs[2]) + Math.Sqrt(Convert.ToDouble(discrim))) / Convert.ToDouble(2 * koefs[1]);
+        }
+
+        public static double findSecondRoot(int[] koefs, int discrim)
+        {
+            return (Convert.ToDouble(-koefs[2]) - Math.Sqrt(Convert.ToDouble(discrim))) / Convert.ToDouble(2 * koefs[1]);
+        }
+
+        public static string output(double firstRoot, double secondRoot)
+        {
+            return "first root is :" + Convert.ToString(firstRoot) + "; second root is :" + Convert.ToString(secondRoot);
         }
     }
 }
